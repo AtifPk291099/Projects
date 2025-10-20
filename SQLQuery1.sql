@@ -1,0 +1,1 @@
+﻿Select s_fname,s_lname,s_age,s_gender,s_email,s_contact,s_seen,s_resume from student where s_saggregate >= '65' and s_caggregate >= '74' and s_c2aggregate >= '82' and s_dept='BSC IT'

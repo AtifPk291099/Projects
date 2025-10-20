@@ -1,0 +1,79 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="background-image:url(images/back.jpg); ">
+    <form id="form1" runat="server">
+    <div>
+    <center>
+    <table style="background-color:White; border-width:thin" width="80%" >
+    
+    <tr>
+    <td colspan="2">
+        <img src="images/campus-rec.jpg" width="100%" height="300"/></td>
+    </tr>
+    
+    <tr>
+    <td style="background-image:url(images/tdside.jpg);" width="20%" align="center"><h2 style="color:White">
+        <asp:Label ID="Label3" runat="server" Text="Menu" Visible="False" 
+            Font-Size="XX-Large" ForeColor="#FF9966"></asp:Label>
+        </h2>
+        <asp:HyperLink ID="HyperLink1" runat="server" 
+            NavigateUrl="~/StudentDetails.aspx" Visible="False" Font-Size="Large" 
+            ForeColor="#FFBF80">View Student Details</asp:HyperLink>
+        <br />
+        <br />
+        <asp:HyperLink ID="HyperLink3" runat="server" 
+            NavigateUrl="~/companydetails.aspx" Visible="False" Font-Size="Large" 
+            ForeColor="#FFBF80">Vacancy</asp:HyperLink>
+        <br />
+    <a href="About.aspx">    <asp:Label ID="Label1" runat="server" Text="About Us" 
+            Font-Size="Large" ForeColor="#FFBF80"></asp:Label>
+    </a>
+        <br />
+        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/addvacancy.aspx" 
+            Visible="False" Font-Size="Large" ForeColor="#FFBF80">Post New Vacancy</asp:HyperLink>
+        <br />
+        <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/AllCompany.aspx" 
+            Visible="False" Font-Size="Large" ForeColor="#FFBF80">All Company</asp:HyperLink>
+        <br />
+    <a href="Faq.aspx">
+        <asp:Label ID="Label2" runat="server" Text="FAQ" Font-Size="Large" 
+            ForeColor="#FFBF80"></asp:Label></a>
+        <br />
+        <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/RemoveAC.aspx" 
+            Visible="False" Font-Size="Large" ForeColor="#FFBF80">Check Account</asp:HyperLink>
+        <br />
+
+ <asp:Button ID="Button1" runat="server" Text="Logout" onclick="Button1_Click" 
+            style="text-align: right" Visible="False" BackColor="White" 
+            BorderColor="White" ForeColor="#993300" />
+    </td>
+    <td style="background-image:url(images/tdback.jpg); color:White; background-position:center center; background-repeat:no-repeat; width:100%; height:auto; "> 
+
+    <center><asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        </center><br />
+        
+        <br /><br /><br /><br />
+        </td>
+    </tr>
+    
+    <tr>
+    <td colspan="2" style="background-image:url(images/footerback.jpg); ">
+        Made By: 
+        </td>
+        </tr>
+        </table>
+    </center>
+    </div>
+    </form>
+</body>
+</html>
